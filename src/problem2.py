@@ -34,7 +34,7 @@ def run_test_shape():
     print('Test 3 of shape: n=9')
     shape(9)
 
-
+k
 def shape(n):
     for k in range(n):
         for j in range(n-k):
