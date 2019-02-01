@@ -246,37 +246,37 @@ def problem4(seq_of_seq, n):
             if seq_of_seq[k][j] > n and is_prime(seq_of_seq[k][j]) is True:
                 return seq_of_seq[k][j]
     return number
-    """
-    What comes in:
-      -- A sequence of sequences: seq_of_seq
-            where the sub-sequences contain only positive integers
-      -- A non-negative integer:  n
-    What goes out:  Returns the first number in the sub-sequences
-        that is both prime and greater than n.
-        Returns -1 if there are no prime numbers greater than n.
-    Side effects: None.
-
-    Examples:
-     Let seq_of_seq = [(3, 25),
-                 (33, 50, 20, 55, 10),
-                 (6, 13, 70, 33, 37),
-                 (7, 11, 109, 61),
-                 (),
-                 (5, 5, 3, 150)
-                ]
-
-    Then if n = 5, returns 13.
-    If n = 50,  returns 109.
-    If n = 120, returns -1.
-    If n = 17,  returns 37.
-    If n = 2,   returns 3.
-    If n = 3,   returns 13.
-
-    Type hints:
-      :type seq_of_seq: [[int]]
-      :type n:          int
-      :rtype: int
-    """
+    # """
+    # What comes in:
+    #   -- A sequence of sequences: seq_of_seq
+    #         where the sub-sequences contain only positive integers
+    #   -- A non-negative integer:  n
+    # What goes out:  Returns the first number in the sub-sequences
+    #     that is both prime and greater than n.
+    #     Returns -1 if there are no prime numbers greater than n.
+    # Side effects: None.
+    #
+    # Examples:
+    #  Let seq_of_seq = [(3, 25),
+    #              (33, 50, 20, 55, 10),
+    #              (6, 13, 70, 33, 37),
+    #              (7, 11, 109, 61),
+    #              (),
+    #              (5, 5, 3, 150)
+    #             ]
+    #
+    # Then if n = 5, returns 13.
+    # If n = 50,  returns 109.
+    # If n = 120, returns -1.
+    # If n = 17,  returns 37.
+    # If n = 2,   returns 3.
+    # If n = 3,   returns 13.
+    #
+    # Type hints:
+    #   :type seq_of_seq: [[int]]
+    #   :type n:          int
+    #   :rtype: int
+    # """
     # -------------------------------------------------------------------------
     # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
