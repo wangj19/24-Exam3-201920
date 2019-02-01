@@ -3,9 +3,9 @@ Exam 3, problem 1.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Jiadi Wang.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -105,28 +105,39 @@ def fibonacci(n):
 
 
 def problem1(n):
-    """
-    What comes in:
-      -- An integer greater than 1:  n
-    What goes out:  Returns the largest Fibonacci number that is less than n
-    Side effects: None.
-    Recall that the Fibonacci sequence is the series of numbers:
-        0, 1, 1, 2, 3, 5, 8, ...
-    where the next number is found by adding the two previous numbers.
-    So the next number in this sequence would be 5 + 8 = 13.
+    one_before = 0
+    two_before = 1
+    while True:
+        largest = one_before + two_before
+        if largest >= n:
+            largest = largest - two_before
+            break
 
-    Examples:
-     problem1(12) would return 8,
-         since the next Fibonacci number (13) is greater than 12.
-     problem1(2) would return 1 and
-     problem1(8) would return 5.
+        two_before=one_before
+        one_before=largest
 
-    Type hints:
-      :type n: int
-      :rtype: int
-    """
+    return largest
+    # What comes in:
+    #   -- An integer greater than 1:  n
+    # What goes out:  Returns the largest Fibonacci number that is less than n
+    # Side effects: None.
+    # Recall that the Fibonacci sequence is the series of numbers:
+    #     0, 1, 1, 2, 3, 5, 8, ...
+    # where the next number is found by adding the two previous numbers.
+    # So the next number in this sequence would be 5 + 8 = 13.
+    #
+    # Examples:
+    #  problem1(12) would return 8,
+    #      since the next Fibonacci number (13) is greater than 12.
+    #  problem1(2) would return 1 and
+    #  problem1(8) would return 5.
+    #
+    # Type hints:
+    #   :type n: int
+    #   :rtype: int
+    # """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # **** IMPORTANT ****:
     # We supplied a   fibonacci   function above.
